@@ -1,0 +1,261 @@
+{
+    "name": "测试数据",
+    "url": "/jk/weight/queryCarWeight",
+    "authorization": true,
+    "method": "POST",
+    "body": [
+         {
+            "requestName": "compName",
+            "type": "array",
+            "required": true,
+            "description": "收货公司名称",
+            "example": ["金属材料有限公司", "鲁南矿业有限公司"]
+        },
+        {
+            "requestName": "beginTm",
+            "type": "string",
+            "required": true,
+            "description": "开始时间",
+            "example": "2023-02-01 12:00:00"
+        },
+        {
+            "requestName": "endTm",
+            "type": "string",
+            "required": true,
+            "description": "结束时间",
+            "example": "2023-02-02 15:00:00"
+        },
+        {
+            "requestName": "carCode",
+            "type": "string",
+            "required": false,
+            "description": "车牌号",
+            "example": "鲁L39207"
+        },
+        {
+            "requestName": "appkey",
+            "type": "string",
+            "required": true,
+            "description": "appkey",
+            "description_1": "在舟道网API市场开通付款成功后获取",
+            "example": "670e6128-87b5-4f8d-9726-0d75a878e50e"
+        },
+        {
+            "requestName": "planCode",
+            "type": "string",
+            "required": false,
+            "description": "计划号",
+            "example": ""
+        }
+    ],
+    "response": [
+        {
+            "responseName": "code",
+            "type": "number",
+            "description": "状态码",
+            "example": 200
+        },
+        {
+            "responseName": "msg",
+            "type": "string",
+            "description": "返回说明",
+            "example": "成功"
+        },
+        {
+            "responseName": "map",
+            "type": "null",
+            "description": "null",
+            "example": null
+        },
+        {
+            "responseName": "total",
+            "type": "number",
+            "description": "返回数量",
+            "example": 6
+        },
+        {
+            "responseName": "rows",
+            "type": "array",
+            "description": "返回数据",
+            "hasChildren": true,
+            "example": "[Object]",
+            "children": [
+                {
+                    "responseName": "loadPlace",
+                    "type": "string",
+                    "description": "起运地",
+                    "example": "日照港岚山公司"
+                },
+                {
+                    "responseName": "destPlace",
+                    "type": "string",
+                    "description": "目的地",
+                    "example": "山东省/临沂市/莒南县"
+                },
+                {
+                    "responseName": "loadTon",
+                    "type": "null",
+                    "description": "null",
+                    "example": null
+                },
+                {
+                    "responseName": "carCode",
+                    "type": "string",
+                    "description": "车牌号",
+                    "example": "鲁L39207"
+                },
+                {
+                    "responseName": "trailerCode",
+                    "type": "string",
+                    "description": "挂车号",
+                    "example": "鲁LLX27挂"
+                },
+                {
+                    "responseName": "barCode",
+                    "type": "string",
+                    "description": "条码号",
+                    "description_1": "港口作业唯一凭证编码",
+                    "example": "62230202487213"
+                },
+                {
+                    "responseName": "grossWeight",
+                    "type": "number",
+                    "description": "毛重",
+                    "example": 48.75
+                },
+                {
+                    "responseName": "tareWeight",
+                    "type": "number",
+                    "description": "皮重",
+                    "example": 17.2
+                },
+                {
+                    "responseName": "netWeight",
+                    "type": "number",
+                    "description": "净重",
+                    "example": 31.55
+                },
+                {
+                    "responseName": "arrivalPortTm",
+                    "type": "string",
+                    "description": "到港时间",
+                    "example": "2023-02-02 05:21:42"
+                },
+                {
+                    "responseName": "leavePortTm",
+                    "type": "string",
+                    "description": "离港时间",
+                    "example": "2023-02-02 06:00:47"
+                },
+                {
+                    "responseName": "status",
+                    "type": "null",
+                    "description": "null",
+                    "example": null
+                },
+                {
+                    "responseName": "dispatchTm",
+                    "type": "null",
+                    "description": "null",
+                    "example": null
+                },
+                {
+                    "responseName": "firstWeightTm",
+                    "type": "string",
+                    "description": "一次过磅时间",
+                    "example": "2023-02-02 05:22:31"
+                },
+                {
+                    "responseName": "secondWeightTm",
+                    "type": "string",
+                    "description": "二次过磅时间",
+                    "example": "2023-02-02 05:59:43"
+                },
+                {
+                    "responseName": "driverName",
+                    "type": "null",
+                    "description": "null",
+                    "example": null
+                },
+                {
+                    "responseName": "driverCard",
+                    "type": "null",
+                    "description": "null",
+                    "example": null
+                },
+                {
+                    "responseName": "mobilePhone",
+                    "type": "string",
+                    "description": "物流电话",
+                    "example": "13800000000"
+                },
+                {
+                    "responseName": "boatName",
+                    "type": "string",
+                    "description": "船名",
+                    "example": "航行者"
+                },
+                {
+                    "responseName": "planCode",
+                    "type": "string",
+                    "description": "计划号",
+                    "example": "22110024_S030"
+                },
+                {
+                    "responseName": "cargoName",
+                    "type": "string",
+                    "description": "货物名称",
+                    "example": "澳精粉"
+                },
+                {
+                    "responseName": "shipmentCompName",
+                    "type": "string",
+                    "description": "发货单位",
+                    "example": "中国日照外轮代理有限公司"
+                },
+                {
+                    "responseName": "receiveCompName",
+                    "type": "string",
+                    "description": "收货单位",
+                    "example": "临沂玫德庚辰金属材料有限公司"
+                },
+                {
+                    "responseName": "entrustCompName",
+                    "type": "string",
+                    "description": "委托单位",
+                    "example": "中国日照外轮代理有限公司"
+                },
+                {
+                    "responseName": "shippingCompanyName",
+                    "type": "string",
+                    "description": "",
+                    "example": "济南金世盛通物流有限公司"
+                },
+                {
+                    "responseName": "portCompName",
+                    "type": "string",
+                    "description": "港口作业公司",
+                    "example": "岚山公司"
+                },
+                {
+                    "responseName": "hth",
+                    "type": "null",
+                    "description": "null",
+                    "example": null
+                },
+                {
+                    "responseName": "contractNo",
+                    "type": "null",
+                    "description": "null",
+                    "example": null
+                },
+                {
+                    "responseName": "stand",
+                    "type": "string",
+                    "description": "排放标准",
+                    "example": "国五"
+                }
+            ]
+        }
+    ]
+}

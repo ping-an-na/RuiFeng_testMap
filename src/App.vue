@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <div>111</div>
-    <HomeMap></HomeMap>
+<!--    <HomeMap></HomeMap>-->
+    <router-view />
   </div>
 </template>
 
 <script>
-import HomeMap from './home/index.vue'
 
 export default {
   name: 'App',
   components: {
-    HomeMap
   }
 }
 </script>
@@ -21,7 +19,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  //text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
